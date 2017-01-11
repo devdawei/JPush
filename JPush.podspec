@@ -20,6 +20,6 @@ s.vendored_frameworks = 'JPushSDK/*.a'
 s.frameworks = 'Foundation', 'UIKit', 'CFNetwork', 'CoreFoundation', 'CoreTelephony', 'SystemConfiguration', 'CoreGraphics', 'Security', 'AdSupport', 'UserNotifications'
 s.libraries = 'z', 'resolv'
 
-s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/JPushSDK/*.{h}' }
+s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/JPushSDK/JPUSHService' }
 
 end
