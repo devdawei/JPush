@@ -16,11 +16,11 @@ s.requires_arc = true
 s.source       = { :git => 'https://github.com/devdawei/JPush.git', :tag => s.version.to_s }
 s.source_files = 'JPush/*.{h}'
 
-s.preserve_paths = 'JPush/*.{a}'
-# s.vendored_frameworks = 'JPush/*.{a}'
 s.frameworks = 'Foundation', 'UIKit', 'CFNetwork', 'CoreFoundation', 'CoreTelephony', 'SystemConfiguration', 'CoreGraphics', 'Security', 'AdSupport', 'UserNotifications'
+s.vendored_libraries = 'JPush/*.{a}'
 s.libraries = 'z', 'resolv'
 
-s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/JPush/', 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/JPush/' }
+s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/JPush/' }
+#, 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/JPush/'
 
 end
