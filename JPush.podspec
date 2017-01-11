@@ -18,6 +18,7 @@ s.source_files = 'JPush/*.{h}'
 
 s.preserve_paths = 'JPush/*.{a}'
 s.frameworks = 'Foundation', 'UIKit', 'CFNetwork', 'CoreFoundation', 'CoreTelephony', 'SystemConfiguration', 'CoreGraphics', 'Security', 'AdSupport', 'UserNotifications'
+s.vendored_libraries = 'JPush/*.{a}'
 s.libraries = 'z', 'resolv'
 
 s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/JPush/', 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/JPush/' }
